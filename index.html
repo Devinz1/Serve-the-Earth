@@ -3,34 +3,46 @@
 <head>
 	<title>Serve The Earth</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.11.2/ui-bootstrap-tpls.min.js'></script>
+  <script src="js/app.js"></script>
+  <script src='js/controllers/mainCtrl.js'></script>
+  <link rel="stylesheet" href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css'>
 </head>
-<h1> Serve The Earth</h1>
-<body>
 
-<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script src='js/jquery.js'></script>
+<body ng-app='ui.bootstrap.demo'>
 
-<h2> Donate Today</h2>
-<div class="progressbar" data-perc="2">
-	<p> Make life a little easier, Donate a bike.</p>
-	<div class="bar"><span></span></div>
-	<div class="label"><span></span></div>
+  <div class='background'></div>
+    <div class="earthHead"><h1> Serve The Earth</h1>
+  </div>
+
+  <div ng-controller="ProgressDemoCtrl">
+
+    <h3>Static</h3>
+    <div class="row">
+        <div class="col-sm-4"><progressbar value="55"></progressbar></div>
+        <div class="col-sm-4"><progressbar class="progress-striped" value="22" type="warning">22%</progressbar></div>
+        <div class="col-sm-4"><progressbar class="progress-striped active" max="200" value="166" type="danger"><i>166 / 200</i></progressbar></div>
+    </div>
+
+    <hr />
+    <h3>Dynamic <button class="btn btn-sm btn-primary" type="button" ng-click="random()">Randomize</button></h3>
+    <progressbar max="max" value="dynamic"><span style="color:black; white-space:nowrap;">{{dynamic}} / {{max}}</span></progressbar>
+    
+    <small><em>No animation</em></small>
+    <progressbar animate="false" value="dynamic" type="success"><b>{{dynamic}}%</b></progressbar>
+
+    <small><em>Object (changes type based on value)</em></small>
+    <progressbar class="progress-striped active" value="dynamic" type="{{type}}">{{type}} <i ng-show="showWarning">!!! Watch out !!!</i></progressbar>
+    
+    <hr />
+    <h3>Stacked <button class="btn btn-sm btn-primary" type="button" ng-click="randomStacked()">Randomize</button></h3>
+    <progress><bar ng-repeat="bar in stacked track by $index" value="bar.value" type="{{bar.type}}"><span ng-hide="bar.value < 5">{{bar.value}}%</span></bar></progress>
+
 </div>
-	<p> We need clean water, Donate a water filter system.</p>
-<div class="progressbar" data-perc="13">
-	<div class="bar color2"><span></span></div>
-	<div class="label"><span></span></div>
-</div>
-    <p> Help keep kids safe, Donate a first aid kit.</p>
-<div class="progressbar" data-perc="45">
-	<div class="bar color3"><span></span></div>
-	<div class="label"><span></span></div>
-</div>
-	<p> Feet matter, Donate a pair of shoes.</p>
-<div class="progressbar" data-perc="45">
-	<div class="bar color4"><span></span></div>
-	<div class="label"><span></span></div>
-</div>
+
+  <h2> Donate Today</h2>
+     		
 
 </body>
 </html>
