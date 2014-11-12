@@ -1,0 +1,16 @@
+{
+	"bikes" : {
+	 "percentage": 100,
+	 "ammount": 1,
+	 "goal": 10
+	 },
+
+	 "waterbottles" : {
+	 "percentage": 85,
+	 "ammount": 15,
+	 "goal": 100
+	 }
+
+}
+
+
