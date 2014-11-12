@@ -6,7 +6,7 @@
 	 },
 
 	 "waterbottles" : {
-	 "percentage": 85,
+	 "percentage": 100,
 	 "ammount": 15,
 	 "goal": 100
 	 }
