@@ -2,23 +2,29 @@
 
 body{
   background-image: url("images/mountains.jpg");
-  
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+
 }
 
 /*.background{
   background-image: url("images/backgroundImg.jpg");
 }*/
 
-.earthHead{
+.earthHead {
   text-align: center;
-  font-size: 30px;
-  border: 2px solid black;
-  box-shadow: 10px 10px 5px black;
-  background-color: white;
+  font-size: 79px;
+  border: 2px solid white;
   border-radius: 20px;
   background-color: transparent;
-  color: silver ;
-  text-indent: 20px;
+  text-indent: 20px; 
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  font-family: 'Open Sans', sans-serif;
+  display: inline-block;
+  margin: 20px auto;
+  padding: 20px 50px;
 }
 
 
@@ -44,13 +50,20 @@ body{
 
   }
   .donateButton{
+    text-align: center;
+    font-size: 24px;
+    border: 2px solid white;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    font-family: 'Indie Flower', cursive;
+    display: inline-block;
+    margin:10px auto;
+    padding:10px 30px;
     background-color: silver;
-   
+    border-radius: 16px;
+     
 
   }
- 
-
-
 
 
 

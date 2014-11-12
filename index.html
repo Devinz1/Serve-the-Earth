@@ -5,26 +5,31 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
   <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js'></script>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.11.2/ui-bootstrap-tpls.min.js'></script>
+  <script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
+  <script src="https://cdn.firebase.com/libs/angularfire/0.8.2/angularfire.min.js"></script>
   <script src="js/app.js"></script>
   <script src='js/controllers/mainCtrl.js'></script>
   <link rel="stylesheet" href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 </head>
 
 <body ng-app='ui.bootstrap.demo'>
 
   <div class='background'></div>
-    <div class="earthHead"><h1> Serve The Earth</h1>
+    <h1 class="earthHead"> Serve The Earth </h1>
   </div>
 
   <div ng-controller="ProgressDemoCtrl">
 
     
    
-    <h3><button class="donateButton" type="button" ng-click="random()">Donate a bike!</button></h3>
    <!-- <progressbar max="max" value="dynamic"><span style="color:black; white-space:nowrap;">{{dynamic}} / {{max}}</span></progressbar>-->
     
-    <small><em>Bikes</em></small>
+   
     <progressbar animate="false" value="dynamic" type="success"><b>{{dynamic}}%</b></progressbar>
+
+     <h3><button class="donateButton" type="button" ng-click="random()">Donate a bike!</button></h3>
 
    <!-- <small><em>Object (changes type based on value)</em></small>
     <progressbar class="progress-striped active" value="dynamic" type="{{type}}">{{type}} <i ng-show="showWarning">!!! MONEYYYYY!!!</i></progressbar> -->
@@ -35,7 +40,7 @@
 
 </div>
 
-  <h2> Donate Today</h2>
+  <!--<h2> Donate Today</h2>-->
      		
 
 </body>
