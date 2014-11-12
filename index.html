@@ -22,6 +22,9 @@
 
   <div ng-controller="ProgressDemoCtrl">
 
+
+
+
     
    
    <!-- <progressbar max="max" value="dynamic"><span style="color:black; white-space:nowrap;">{{dynamic}} / {{max}}</span></progressbar>-->
@@ -30,6 +33,10 @@
     <progressbar animate="false" value="dynamic" type="success"><b>{{dynamic}}%</b></progressbar>
 
      <h3><button class="donateButton" type="button" ng-click="random()">Donate a bike!</button></h3>
+    <div ng-repeat = "progress in progressResult"> {{progress.percentage}}
+      <input ng-model='donation.amount'>
+      <button ngclick='addDonate'('donation.amount', 'progress')>
+    </div>
 
    <!-- <small><em>Object (changes type based on value)</em></small>
     <progressbar class="progress-striped active" value="dynamic" type="{{type}}">{{type}} <i ng-show="showWarning">!!! MONEYYYYY!!!</i></progressbar> -->

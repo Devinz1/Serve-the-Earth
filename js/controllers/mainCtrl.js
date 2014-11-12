@@ -1,4 +1,9 @@
 angular.module('ui.bootstrap.demo').controller('ProgressDemoCtrl', function ($scope, $firebase) {
+
+  var firebase = new Firebase('https://servetheearth.firebaseio.com/');
+  $scope.progressResult = $firebase(firebase).$asArray();
+
+
   $scope.max = 200;
 
   $scope.random = function() {
