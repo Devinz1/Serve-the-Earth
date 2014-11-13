@@ -30,13 +30,33 @@
    <!-- <progressbar max="max" value="dynamic"><span style="color:black; white-space:nowrap;">{{dynamic}} / {{max}}</span></progressbar>-->
     
    
-    <progressbar animate="false" value="dynamic" type="success"><b>{{dynamic}}%</b></progressbar>
+   <!-- <progressbar animate="false" value="dynamic" type="success"><b>{{dynamic}}%</b></progressbar> -->
 
-     <h3><button class="donateButton" type="button" ng-click="random()">Donate a bike!</button></h3>
-    <div ng-repeat = "progress in progressResult"> {{progress.percentage}}
-      <input ng-model='donation.amount'>
-      <button ngclick='addDonate'('donation.amount', 'progress')>
+  <!-- this is my code that made the first progress bar work-->
+
+    <!-- <h3><button class="donateButton" type="button" ng-click="random()">Donate a bike!</button></h3> -->
+    <!-- this was my button for the donation now its inside my objects donations -->
+    
+    <div class='fund' ng-repeat = "progress in progressResult"> 
+      <h2>Fund: {{progress.fund}}</h2>
+      <div class='myProgress'>
+        <div class="bar" ng-style="{width:{{((progress.raised / progress.goal) * 100)}} + '%'}">
+                <!-- show calculated percentage if total amount raised is <= 100% -->
+                <span class="percent" ng-show="((progress.raised / progress.goal) * 100) <= 100">{{((progress.raised / progress.goal) * 100) | number:0}}%</span>
+                <!-- show maximum percentage if total amount raised is > 100% -->
+                <span class="percent" ng-show="((progress.raised / progress.goal) * 100) > 100">100%</span>
+            </div>
+        </div>
+        <span class="goal">Raised: ${{progress.raised | number:0}} &nbsp;&compfn;&nbsp; Goal: ${{progress.goal | number:0}}</span>
+        <a class="donate" ng-href="{{progress.link}}"> &raquo;</a>
+         <progressbar animate="false" value="dynamic" type="success"><b>{{dynamic}}%</b></progressbar>
+         <h3><button class="donateButton" type="button" ng-click="random()">Donate a bike!</button></h3>
+         
+
     </div>
+      <!--<input ng-model='donation.amount'>
+      <button ngclick='addDonate'('donation.amount', 'progress')><em>Donate</em>
+    </div> -->
 
    <!-- <small><em>Object (changes type based on value)</em></small>
     <progressbar class="progress-striped active" value="dynamic" type="{{type}}">{{type}} <i ng-show="showWarning">!!! MONEYYYYY!!!</i></progressbar> -->

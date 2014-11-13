@@ -1,14 +1,14 @@
 {
 	"bikes" : {
-	 "percentage": 100,
-	 "ammount": 1,
+	 "fund": "Bikes",
+	 "raised": 3,
 	 "goal": 10
 	 },
 
 	 "waterbottles" : {
-	 "percentage": 100,
-	 "ammount": 15,
-	 "goal": 100
+	 "fund":"Water Filters",
+	 "raised": 15,
+	 "goal": 1000
 	 }
 
 }

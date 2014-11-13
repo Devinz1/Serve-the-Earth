@@ -49,7 +49,7 @@ body{
     transition: width 0.8s ease;
 
   }
-  .donateButton{
+  /*.donateButton{
     text-align: center;
     font-size: 24px;
     border: 2px solid white;
@@ -63,7 +63,46 @@ body{
     border-radius: 16px;
      
 
+  }*/
+
+  .fund{
+  text-align: center;
+  font-size: 22px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: white;
+  opacity: 0.9;
+  filter: alpha(opacity=80);
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0px 2px 0px 20px;
+  
+ 
   }
 
+  .bar{
+    font-family: 'Indie Flower', cursive;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+  }
 
+.donateButton{
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid white;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    font-family: 'Indie Flower', cursive;
+    display: inline-block;
+    margin:10px auto;
+    padding:10px 30px;
+    background-color: black;
+    border-radius: 16px;
+     
+
+  }
 
