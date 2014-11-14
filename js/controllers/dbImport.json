@@ -9,6 +9,18 @@
 	 "fund":"Water Filters",
 	 "raised": 15,
 	 "goal": 1000
+	 },
+
+	 "First Aid Kits" : {
+	 "fund":"First Aid",
+	 "raised": 74,
+	 "goal": 1000
+	 },
+
+	  "hygine" : {
+	 "fund":"Hygine Kits",
+	 "raised": 74,
+	 "goal": 1000
 	 }
 
 }
