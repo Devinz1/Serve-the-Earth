@@ -2,8 +2,13 @@ angular.module('ui.bootstrap.demo').controller('ProgressDemoCtrl', function ($sc
 
   var firebase = new Firebase('https://servetheearth.firebaseio.com/');
   $scope.progressResult = $firebase(firebase).$asArray();
-  
+  console.log($scope.progressResult);
 
+  $scope.raised = $scope.progressResult.raised;
+  $scope.goal = $scope.progressResult.goal;
+  $scope.getPercentage = function(){
+    return (($scope.raised / $scope.goal) * 100);
+  }
 
   $scope.max = 200;
 
@@ -21,7 +26,7 @@ angular.module('ui.bootstrap.demo').controller('ProgressDemoCtrl', function ($sc
       type = 'danger';
     }
 
-    $scope.showWarning = (type === 'danger' || type === 'warning');
+    
 
     $scope.dynamic = value;
     $scope.type = type;
@@ -29,6 +34,10 @@ angular.module('ui.bootstrap.demo').controller('ProgressDemoCtrl', function ($sc
   $scope.random();
 
 
+
+//sync.$update("First Aid Kits",{goal:1000, raised:640,});
+//sync.$update("bikes",{goal: 1000,  raised: 240});
+//sync.$update("waterbottles",{goal: 1000, raised: 13});
 
   
 

@@ -33,16 +33,17 @@
   <div class='fund' ng-repeat = "progress in progressResult"> 
       <h2>Fund: {{progress.fund}}</h2>
   <div class='myProgress'>
-      <div class="bar" ng-style="{width:{{((progress.raised / progress.goal) * 100)}} + '%'}">
+      <div class="bar" ng-style="{width: (getPercentage() + '%' )}">
           <!-- show calculated percentage if total amount raised is <= 100% -->
           <span class="percent" ng-show="((progress.raised / progress.goal) * 100) <= 100">{{((progress.raised / progress.goal) * 100) | number:0}}%</span>
           <!-- show maximum percentage if total amount raised is > 100% -->
           <span class="percent" ng-show="((progress.raised / progress.goal) * 100) > 100">100%</span>
+          
       </div>
   </div>
           <span class="goal">Raised: ${{progress.raised | number:0}} &nbsp;&compfn;&nbsp; Goal: ${{progress.goal | number:0}}</span>
           <a class="donate" ng-href="{{progress.link}}"> &raquo;</a>
-          <progressbar animate="false" value="dynamic" type="success"><b>{{dynamic}}%</b></progressbar>
+          <progressbar animate="false" value="dynamic" type="success"><b>{{progress}}%</b></progressbar>
           <h6 class = 'donateButton2'>
           <input ng-model='donation.raised' placeholder='$'></h6>
           <h3><button class="donateButton" type="button" ng-click="random()">Donate!</button></h3>
@@ -64,10 +65,10 @@
 </div>
 
       
-      <h6 class='ptag'><h3>Serving by giving!</h3>
+    <!--  <h6 class='ptag'><h3>Serving by giving!</h3>
         Serve The Earth is a webapp dedicated to helping others. We all want to serve others but sometimes we just dont know how or where to go? Serve The Earth allows everyone to serve by donating money to provide items to people that need them. Every week it seems there is another disaster somewhere in the world. Whenever you turn on the news we hear about earthquakes, fires, desises, deaths, and mulitple other disaters and that just doesnt include natural disaters. Oraphanges need materials, countries need bikes for transport, and others need a way to just drink clean water. Serve The Earth makes that possible. Every three weeks or so we will find a new cause to help out, and each cause will have specific items that you can donate money to that will help someone in need. It doesnt matter how much you donate even a doller will help the world know that we care.
 
-Donate Today!</h6>
+Donate Today!</h6> -->
 
   <!--<h2> Donate Today</h2>-->
      		
