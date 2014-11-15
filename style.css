@@ -3,6 +3,8 @@
 body{
   background-image: url("images/kids.jpg");
   text-align: center;
+  max-width: 100%;
+
   font-size: 14px;
   color: #333;
 
@@ -62,7 +64,7 @@ body{
      
 
   }*/
- 
+
 
   .fund{
   text-align: center;
