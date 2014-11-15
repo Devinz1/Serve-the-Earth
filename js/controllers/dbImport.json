@@ -2,19 +2,22 @@
 	"bikes" : {
 	 "fund": "Bikes",
 	 "raised": 3,
-	 "goal": 10
+	 "goal": 10,
+	 "percentage": 0
 	 },
 
 	 "waterbottles" : {
 	 "fund":"Water Filters",
 	 "raised": 15,
-	 "goal": 1000
+	 "goal": 1000,
+	  "percentage": 0
 	 },
 
 	 "firstAid" : {
 	 "fund":"First Aid",
 	 "raised": 74,
-	 "goal": 1000
+	 "goal": 1000,
+	  "percentage": 0
 	 }
 
 	

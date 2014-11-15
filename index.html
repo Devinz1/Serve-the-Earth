@@ -31,7 +31,7 @@
  <!-- this was my button for the donation now its inside my objects donations -->
     
   <div class='fund' ng-repeat = "progress in progressResult"> 
-      <h2>Fund: {{progress.fund}}</h2>
+      <h2> {{progress.fund}}</h2>
   <div class='myProgress'>
       <div class="bar" ng-style="{width: (getPercentage() + '%' )}">
           <!-- show calculated percentage if total amount raised is <= 100% -->
@@ -43,11 +43,11 @@
       </div>
   </div>
           <span class="goal">Raised: ${{progress.raised | number:0}} &nbsp;&compfn;&nbsp; Goal: ${{progress.goal | number:0}}</span>
-          <a class="donate" ng-href="{{progress.link}}"> &raquo;</a>
-          <progressbar animate="false" value="progress.raised" type="success"><b>{{progress.raised}}%</b></progressbar>
+          <!--<a class="donate" ng-href="{{progress.link}}"> &raquo;</a>-->
+          <progressbar animate="false" value="progress.percentage" type="success"><b>{{progress.percentage}}%</b></progressbar>
           <h6 class = 'donateButton2'>
           <input ng-model='donation.raised' placeholder='$'></h6>
-          <h3><button class="donateButton" type="button" ng-click="random()">Donate!</button> </h3>
+          <h3><button class="donateButton" type="button" ng-click="getPercentage()">Donate!</button> </h3>
 
   </div>
   
