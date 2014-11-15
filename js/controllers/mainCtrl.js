@@ -9,7 +9,7 @@ angular.module('ui.bootstrap.demo').controller('ProgressDemoCtrl', function ($sc
   $scope.getPercentage = function(){
     return (($scope.raised / $scope.goal) * 100);
   }
-
+// this is past code I tried out, not sure if I want to delete yet just in case I go back to it.
   $scope.max = 200;
 
   $scope.random = function() {
