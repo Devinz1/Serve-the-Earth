@@ -4,18 +4,35 @@ angular.module('ui.bootstrap.demo').controller('ProgressDemoCtrl', function ($sc
   $scope.progressResult = $firebase(firebase).$asArray();
   console.log($scope.progressResult);
 
- $scope.raised = $scope.progressResult.raised;
-  $scope.goal = $scope.progressResult.goal;
-  $scope.percentage = $scope.progressResult.percentage;
-  $scope.getPercentage = function(){
-   // return (($scope.raised / $scope.goal) * 100);
-   $scope.percentage = $scope.raised / $scope.goal * 100;
-
+  $scope.donate1 = function (){
+    firebase.child('bikes').update({raised: 800});
+  }
+$scope.donate2 = function (){
+    firebase.child('firstAid').update({raised: 900});
   }
 
-  //var sync = $firebase(progressResult);
-  //$scope.moneyChart = sync.$asArray();
-  //$scope.saveProgressResult = function(){
+  $scope.donate = function (){
+    firebase.child('waterbottles').update({raised: 200});
+  }
+  var list = $firebase(firebase).$asArray();
+  list.$add({ bikes: "raised" }).then(function(ref) {
+  var id = firebase.key('bikes');
+  console.log("added record with id " + id);
+  list.$indexFor(id); // returns location in the array
+});
+
+
+  
+  // $scope.getPercentage = function(){
+  //  // return (($scope.raised / $scope.goal) * 100);
+  //  $scope.percentage = (($scope.raised/$scope.goal)*100);
+  // };
+
+
+
+  //var $scope.moneyChart = sync.$asArray();
+  //$scope.saveProgressResult = function(){sync = $firebase(progressResult);
+  //
    // $scope.moneyChart.$add($scope.progressResult)
   //}
 

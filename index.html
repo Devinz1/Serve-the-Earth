@@ -3,12 +3,7 @@
 <head>
 	<title>Serve The Earth</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js'></script>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.11.2/ui-bootstrap-tpls.min.js'></script>
-  <script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
-  <script src="https://cdn.firebase.com/libs/angularfire/0.8.2/angularfire.min.js"></script>
-  <script src="js/app.js"></script>
-  <script src='js/controllers/mainCtrl.js'></script>
+ 
   <link rel="stylesheet" href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
@@ -37,10 +32,11 @@
   </div>
           <span class="goal">Raised: ${{progress.raised | number:0}} &nbsp;&compfn;&nbsp; Goal: ${{progress.goal | number:0}}</span>
           <!--<a class="donate" ng-href="{{progress.link}}"> &raquo;</a>-->
-          <progressbar animate="false" value="progress.raised"  type="success"><b>{{((progress.raised / progress.goal) * 100) | number:0}}%</b></progressbar>
+          <progressbar animate="false" value="((progress.raised / progress.goal) * 100)"  type="success"><b>{{((progress.raised / progress.goal) * 100) | number:0}}%</b></progressbar>
           <h6 class = 'donateButton2'>
           <input ng-model='donation.raised' placeholder='$'></h6>
-          <h3><button class="donateButton" type="button" ng-click="getPercentage()">Donate!</button> </h3>
+          <h3><button class="donateButton" type="button" ng-click="donate()", ng-click='donate1()', ng-click='donate2()'>Donate!</button> </h3>
+          
 
   </div>
   
@@ -68,6 +64,13 @@
 Donate Today!</h6> 
 
   <!--<h2> Donate Today</h2>-->
+
+   <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.11.2/ui-bootstrap-tpls.min.js'></script>
+  <script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
+  <script src="https://cdn.firebase.com/libs/angularfire/0.8.2/angularfire.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src='js/controllers/mainCtrl.js'></script>
      		
 
 </body>
