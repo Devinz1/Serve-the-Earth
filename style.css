@@ -108,19 +108,19 @@ body{
 
   }
 
-.donateButton2{
-  color: black;
-   font-family: bold;
-   font-size: 22px;
-   background-color: white;
-}
 
 
-.ptag{
-   background-image: url("images/kids.jpg");
-  color: white;
-  font-size: 22px;
-  background-color: white;
-  font-family: 'Open Sans', sans-serif;
+.mission {
   
+ text-align: center;
+  font-size: 79px;
+  border: 2px solid white;
+  background-color: white;
+  text-indent: 20px; 
+  color: black;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  font-family: 'Open Sans', sans-serif;
+  margin: -45px 0px 60px 0px;
+  padding: 20px 50px;
 }
+
