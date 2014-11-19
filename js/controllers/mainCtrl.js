@@ -13,6 +13,13 @@ angular.module('ui.bootstrap.demo').controller('ProgressDemoCtrl', function ($sc
 
   }
 
+  //var sync = $firebase(progressResult);
+  //$scope.moneyChart = sync.$asArray();
+  //$scope.saveProgressResult = function(){
+   // $scope.moneyChart.$add($scope.progressResult)
+  //}
+
+
  // $scope.max = 200;
 
   //$scope.random = function() {
