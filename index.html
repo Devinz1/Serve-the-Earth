@@ -20,7 +20,7 @@
     
   <div class='fund' ng-repeat = "progress in progressResult"> 
       <h2> {{progress.fund}}</h2>
-  <div class='myProgress'>
+    <div class='myProgress'>
       <div class="bar" ng-style="{width: (getPercentage() + '%' )}">
           <!-- show calculated percentage if total amount raised is <= 100% -->
           <span class="percent" ng-show="((progress.raised / progress.goal) * 100) <= 1000">{{((progress.raised / progress.goal) * 100) | number:0}}%</span>
@@ -35,10 +35,10 @@
           <progressbar animate="false" value="((progress.raised / progress.goal) * 100)"  type="success"><b>{{((progress.raised / progress.goal) * 100) | number:0}}%</b></progressbar>
           <h6 class = 'donateButton2'>
           <input ng-model='donation.raised' placeholder='$'></h6>
-          <h3><button class="donateButton" type="button" ng-click="donate()", ng-click='donate1()', ng-click='donate2()'>Donate!</button> </h3>
+          <h3><button class="donateButton" type="button" ng-click="donate()">Donate!</button> </h3>
           
 
-  </div>
+</div>
   
      <!-- code that might be used later, I dont want to delete it quite yet-->
       <!--<input ng-model='donation.amount'>
@@ -57,11 +57,20 @@
 
     <div class='mission'> Our Mission</div>
 
-
-      <h6 class='ptag'>
+     <div class='aboutUs'>
         Serve The Earth is a webapp dedicated to helping others. We all want to serve others but sometimes we just dont know how or where to go? Serve The Earth allows everyone to serve by donating money to provide items to people that need them. Every week it seems there is another disaster somewhere in the world. Whenever you turn on the news we hear about earthquakes, fires, desises, deaths, and mulitple other disaters and that just doesnt include natural disaters. Oraphanges need materials, countries need bikes for transport, and others need a way to just drink clean water. Serve The Earth makes that possible. Every three weeks or so we will find a new cause to help out, and each cause will have specific items that you can donate money to that will help someone in need. It doesnt matter how much you donate even a doller will help the world know that we care.
+    </div>
 
-Donate Today!</h6> 
+
+    
+      <h3 class='why'>Who we serve</h3>
+
+     <div class='who'>
+     Who do we donate to, this donation period we are going to donate to the country of Africa. Africa has felt many hardships and in recent months have been affected by ebola. We wanted to give to a country that was facing hard times and feel like we can help during this donation period give the people of Africa a hope for the holidays. 
+     We want to help people throughout the world. With Serve The Earth we tackle a cause for three weeks, during that three weeks we earn as much money as we can to be able to give to these countries in need. This time of year is a wonderful time to give and during the next three weeks we want to earn as much as we can for Christmas. . 
+
+
+
 
   <!--<h2> Donate Today</h2>-->
 

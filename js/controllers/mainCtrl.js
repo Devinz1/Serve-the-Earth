@@ -4,22 +4,16 @@ angular.module('ui.bootstrap.demo').controller('ProgressDemoCtrl', function ($sc
   $scope.progressResult = $firebase(firebase).$asArray();
   console.log($scope.progressResult);
 
-  $scope.donate1 = function (){
-    firebase.child('bikes').update({raised: 800});
-  }
-$scope.donate2 = function (){
-    firebase.child('firstAid').update({raised: 900});
-  }
-
+ 
   $scope.donate = function (){
-    firebase.child('waterbottles').update({raised: 200});
+    firebase.child('bikes').update({raised: 450});
   }
-  var list = $firebase(firebase).$asArray();
-  list.$add({ bikes: "raised" }).then(function(ref) {
-  var id = firebase.key('bikes');
-  console.log("added record with id " + id);
-  list.$indexFor(id); // returns location in the array
-});
+//var list = $firebase(ref).$asArray();
+//list.$add({ foo: "bar" }).then(function(ref) {
+  //var id = ref.key();
+  //console.log("added record with id " + id);
+  //list.$indexFor(id); // returns location in the array
+//});
 
 
   
