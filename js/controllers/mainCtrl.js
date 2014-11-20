@@ -3,10 +3,18 @@ angular.module('ui.bootstrap.demo').controller('ProgressDemoCtrl', function ($sc
   var firebase = new Firebase('https://servetheearth.firebaseio.com/');
   $scope.progressResult = $firebase(firebase).$asArray();
   console.log($scope.progressResult);
+  var sync = $firebase(firebase)
 
- 
-  $scope.donate = function (){
-    firebase.child('bikes').update({raised: 450});
+  $scope.donate = function (index){
+    debugger;
+    $id = index
+    console.log($scope.progressResult[index]);
+    console.log($scope.progressResult[index].donation)
+    var donation = parseInt($scope.progressResult[index].donation)
+    $scope.progressResult[index].raised = $scope.progressResult[index].raised + donation
+    console.log($scope.progressResult[index]);
+
+    //sync.$save($id)
   }
 //var list = $firebase(ref).$asArray();
 //list.$add({ foo: "bar" }).then(function(ref) {
