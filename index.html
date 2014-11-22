@@ -36,15 +36,10 @@
           <progressbar animate="false" value="((progress.raised / progress.goal) * 100)"  type="success"><b>{{((progress.raised / progress.goal) * 100) | number:0}}%</b></progressbar>
           <h6 class = 'donateButton2'>
           <input ng-model='progress.donation' placeholder='$'></h6>
-         
-          <h3><button class="donateButton" type="button" ng-click="donate($index, donation)">Donate!</button> </h3>
+         <a href=''
+          <h3><a href='https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=6Sw98bywUrlByCzUuv2uvZMx6hksRhXTFWH_qe9JM1S3wFNrsD3DTiy2Pee&dispatch=5885d80a13c0db1f8e263663d3faee8d66f31424b43e9a70645c907a6cbd8fb4'button class="donateButton" type="button" ng-click="donate($index, donation)">Donate!</a> </h3>
 
-          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="3ATLKE5LC56VU">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
+         
 
           
 
@@ -110,11 +105,10 @@
   <script src="https://cdn.firebase.com/libs/angularfire/0.8.2/angularfire.min.js"></script>
   <script src="js/app.js"></script>
   <script src='js/controllers/mainCtrl.js'></script>
-  <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
-   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  
+  
  
-  <script type="text/javascript">
+  
      		
 
 </body>

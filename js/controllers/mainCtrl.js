@@ -14,6 +14,7 @@ angular.module('ui.bootstrap.demo').controller('ProgressDemoCtrl', function ($sc
     $scope.progressResult[index].raised = $scope.progressResult[index].raised + donation
     //console.log($scope.progressResult[index]);
 
+
     //sync.$save($id)
   }
 //var list = $firebase(ref).$asArray();
