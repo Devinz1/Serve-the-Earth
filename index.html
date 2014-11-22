@@ -7,12 +7,13 @@
   <link rel="stylesheet" href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
 </head>
 
 <body ng-app='ui.bootstrap.demo'>
 
   <div class='background'></div>
-    <h1 class="earthHead"> Serve The Earth </h1>
+    <h1 id="earthHead"> Serve The Earth </h1>
   </div>
   
   <div ng-controller="ProgressDemoCtrl">
@@ -37,10 +38,19 @@
           <input ng-model='progress.donation' placeholder='$'></h6>
          
           <h3><button class="donateButton" type="button" ng-click="donate($index, donation)">Donate!</button> </h3>
+
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="3ATLKE5LC56VU">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
           
 
 </div>
   
+
      <!-- code that might be used later, I dont want to delete it quite yet-->
       <!--<input ng-model='donation.amount'>
       <button ngclick='addDonate'('donation.amount', 'progress')><em>Donate</em>
@@ -59,7 +69,7 @@
     <div class='mission'> Our Mission</div>
 
      <div class='aboutUs'>
-        Serve The Earth is a webapp dedicated to helping others. We all want to serve others but sometimes we just dont know how or where to go? Serve The Earth allows everyone to serve by donating money to provide items to people that need them. Every week it seems there is another disaster somewhere in the world. Whenever you turn on the news we hear about earthquakes, fires, desises, deaths, and mulitple other disaters and that just doesnt include natural disaters. Oraphanges need materials, countries need bikes for transport, and others need a way to just drink clean water. Serve The Earth makes that possible. Every three weeks or so we will find a new cause to help out, and each cause will have specific items that you can donate money to that will help someone in need. It doesnt matter how much you donate even a doller will help the world know that we care.
+        Serve The Earth is a web-app dedicated to helping others. We all want to serve others but sometimes we just dont know how or where to go? Serve The Earth allows everyone to serve by donating money to provide items to people that need them. Every week it seems there is another disaster somewhere in the world. Whenever you turn on the news we hear about earthquakes, fires, desises, deaths, and mulitple other disaters and that just doesnt include natural disaters. We look at the supplies that people need and donate towards that according to there needs. Serve The Earth makes that possible. Every three weeks or so we will find a new cause to help out, and each cause will have specific items that you can donate money to that will help someone in need. It doesnt matter how much you donate even a doller will help the world know that we care.
     </div>
 
 
@@ -67,8 +77,27 @@
       <h3 class='why'> Hope for the holidays</h3>
 
      <div class='who'>
-     Who do we donate to, this donation period we are going to donate to the country of Africa. Africa has felt many hardships and in recent months have been affected by ebola. We wanted to give to a country that was facing hard times and feel like we can help during this donation period give the people of Africa a hope for the holidays. 
-     We want to help people throughout the world. With Serve The Earth we tackle a cause for three weeks, during that three weeks we earn as much money as we can to be able to give to these countries in need. This time of year is a wonderful time to give and during the next three weeks we want to earn as much as we can for Christmas. . 
+     This donation period we are going to donate to the country of Africa. Africa has felt many hardships and in recent months have been affected by ebola. We wanted to give to a country that was facing hard times and feel like we can help the people of Africa in there of need have a  hope for the newyear. For this donation period we wanted to donate bikes, first aid kits, and water filters.
+   </div>
+
+   <div class='list'>
+     <d1>
+      <img src="images/africa.jpg" alt='kids' width='310' height='340' align='right'/>
+      <dt>Bikes</dt> 
+         <dd>We want to donate bikes to help those without transportation, not only does it make it easier to get around it it is also safer in many ways. Families will be able to get where they need to in a fast and reliable way.</d>
+      <dt>First Aid Kits</dt>
+         <dd>First aid kits help improve the lives of everyone by providing healthy means of getting your body the proper care it needs when needed. No one should have to worry about a small cut getting infected to the point where you need to be hospitalized. This will help many provide a safer and healty life.</dd>
+      <dt>Water Bottles</dt> 
+         <dd>filters provides a way make water drinkable and accesable. We want to provide water bottles that can do that for you. With these water bottles not only will it help health wise it will help families rest easy at night knowing there going to be ok.</dd>
+    
+    </d1>
+    
+   </div>
+   <div class='donateTo'>
+
+   <p><a href ='#earthHead'><button class='donate' type='button'>Donate Today</button></a></p>
+
+ </div>
 
 
 
@@ -81,6 +110,11 @@
   <script src="https://cdn.firebase.com/libs/angularfire/0.8.2/angularfire.min.js"></script>
   <script src="js/app.js"></script>
   <script src='js/controllers/mainCtrl.js'></script>
+  <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ 
+  <script type="text/javascript">
      		
 
 </body>

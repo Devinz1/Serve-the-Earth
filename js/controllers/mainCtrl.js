@@ -6,13 +6,13 @@ angular.module('ui.bootstrap.demo').controller('ProgressDemoCtrl', function ($sc
   var sync = $firebase(firebase)
 
   $scope.donate = function (index){
-    debugger;
+    //debugger;
     $id = index
-    console.log($scope.progressResult[index]);
-    console.log($scope.progressResult[index].donation)
+    //console.log($scope.progressResult[index]);
+   //console.log($scope.progressResult[index].donation)
     var donation = parseInt($scope.progressResult[index].donation)
     $scope.progressResult[index].raised = $scope.progressResult[index].raised + donation
-    console.log($scope.progressResult[index]);
+    //console.log($scope.progressResult[index]);
 
     //sync.$save($id)
   }
