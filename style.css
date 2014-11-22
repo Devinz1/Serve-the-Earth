@@ -179,7 +179,15 @@ body{
     font-family: 'Indie Flower', cursive;
     display: inline-block;
     margin: 30px;
-    padding:10px 20px 0px 20px;
+    padding:0px 20px 0px 20px;
     background-color: white;
     border-radius: 16px;
+}
+
+.contact{
+  background-color: black;
+  font-size: 16px;
+  color: white;
+  font-family: 'Indie Flower', cursive;
+  padding:10px 0px 10px 0px;
 }
