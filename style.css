@@ -4,10 +4,8 @@ body{
   background-image: url("images/kids.jpg");
   text-align: center;
   max-width: 100%;
-
   font-size: 14px;
   color: #333;
-
 }
 
 /*.background{
@@ -32,23 +30,22 @@ body{
 
 
  .progress{
-    position:relative;
-    display: block;
-    width:300px;
-    height: 30px;
-    border-bottom: 1px solid rgba(255,255,255,0.25);
-    border-radius: 16px;
-    margin:9px 0px 0px 0px;
+   position:relative;
+   display: block;
+   width:300px;
+   height: 30px;
+   border-bottom: 1px solid rgba(255,255,255,0.25);
+   border-radius: 16px;
+   margin:9px 0px 0px 0px;
    overflow: hidden;
    text-align: center;
 }
-  .progress-bar{
-     width: 50%;
+ .progress-bar{
+    width: 50%;
     height: 100%;
     background: #efefef;
     transition: width 0.8s ease;
-
-  }
+}
   /*.donateButton{
     text-align: center;
     font-size: 24px;
@@ -66,7 +63,7 @@ body{
   }*/
 
 
-  .fund{
+.fund{
   text-align: center;
   font-size: 22px;
   border: 2px solid white;
@@ -79,40 +76,34 @@ body{
   display: inline-block;
   overflow: hidden;
   margin: 10px 30px 300px 30px;
+ }
 
-  
- 
-  }
-
-  .bar{
-    font-family: 'Open Sans', sans-serif;
-    color: black;
-    font-size: 27px;
-    text-align: center;
-    display: inline-block;
-  }
+.bar{
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-size: 27px;
+  text-align: center;
+  display: inline-block;
+ }
 
 .donateButton{
-    text-align: center;
-    font-size: 18px;
-    border: 2px solid white;
-    color: white;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
-    font-family: 'Indie Flower', cursive;
-    display: inline-block;
-    margin:10px auto;
-    padding:10px 30px;
-    background-color: black;
-    border-radius: 16px;
-     
-
-  }
+  text-align: center;
+  font-size: 18px;
+  border: 2px solid white;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  font-family: 'Indie Flower', cursive;
+  display: inline-block;
+  margin:10px auto;
+  padding:10px 50px 10px;
+  background-color: black;
+  border-radius: 20px;
+}
 
 
 
 .mission {
-  
- text-align: center;
+  text-align: center;
   font-size: 53px;
   background-color: black;
   text-indent: 20px; 
@@ -129,20 +120,19 @@ body{
   background-color: black;
   text-indent: 20px; 
   color: white;
- font-family: 'Questrial', sans-serif;
+  font-family: 'Questrial', sans-serif;
   margin: 0px 0px 0px 0px;
-  padding: 20px 50px;
+  padding: 20px 50px 70px;
 }
 
 .why{
   text-align: center;
   font-size: 36px;
   background-color: black;
-  
   color: white;
   font-family: 'Questrial', sans-serif;
   margin: 0px 0px 0px 0px;
-  padding: 20px 0px;
+  padding: 20px 0px 5px;
 }
 
 .who{
@@ -150,7 +140,7 @@ body{
   font-size: 17px;
   background-color: black;
   color: white;
- font-family: 'Questrial', sans-serif;
+  font-family: 'Questrial', sans-serif;
   margin: 0px 0px 0px 0px;
   padding: 0px 50px 30px;
 }
@@ -171,23 +161,24 @@ body{
 }
 .donate{
   text-align: center;
+  font-size: 21px;
+  border: 2px solid white;
+  color: black;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  font-family: 'Indie Flower', cursive;
+  display: inline-block;
+  margin: 30px;
+  padding:0px 20px 0px 20px;
+  background-color: white;
+  border-radius: 20px;
 
-    font-size: 21px;
-    border: 2px solid white;
-    color: black;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
-    font-family: 'Indie Flower', cursive;
-    display: inline-block;
-    margin: 30px;
-    padding:0px 20px 0px 20px;
-    background-color: white;
-    border-radius: 16px;
-}
 
 .contact{
   background-color: black;
-  font-size: 16px;
+  border-bottom: white;
+  font-size: 19px;
   color: white;
   font-family: 'Indie Flower', cursive;
   padding:10px 0px 10px 0px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
 }
