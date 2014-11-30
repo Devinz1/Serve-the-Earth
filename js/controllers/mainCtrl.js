@@ -58,7 +58,6 @@ angular.module('ui.bootstrap.demo').controller('ProgressDemoCtrl', function ($sc
 
     
 
-    //$scope.dynamic = value;
     //$scope.type = type;
   //};
   //$scope.random();
