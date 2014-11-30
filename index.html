@@ -24,7 +24,7 @@
     <div class='myProgress'>
       <div class="bar" ng-style="{width: (getPercentage() + '%' )}">
           <!-- show calculated percentage if total amount raised is <= 100% -->
-          <span class="percent" ng-show="((progress.raised / progress.goal) * 100) <= 1000">{{((progress.raised / progress.goal) * 100) | number:0}}%</span>
+          <!--<span class="percent" ng-show="((progress.raised / progress.goal) * 100) <= 1000">{{((progress.raised / progress.goal) * 100) | number:0}}%</span>-->
           <!-- show maximum percentage if total amount raised is > 100% -->
           <span class="percent" ng-show="((progress.raised / progress.goal) * 100) > 1000">100%</span>
          
