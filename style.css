@@ -1,22 +1,19 @@
 /*@import url(http://fonts.googleapis.com/css?family=Aldrich);*/
 
+
 body{
   background-image: url("images/kids.jpg");
   text-align: center;
   max-width: 100%;
   font-size: 14px;
   color: #333;
+  position: static;
 }
 
-/*.background{
-  background-image: url("images/backgroundImg.jpg");
-}*/
 
 #earthHead {
   text-align: center;
   font-size: 79px;
-  /*border: 2px solid white;
-  border-radius: 20px;*/
   background-color: transparent;
   text-indent: 20px; 
   color: white;
@@ -101,8 +98,6 @@ body{
   border-radius: 20px;
 }
 
-
-
 .mission {
   text-align: center;
   font-size: 53px;
@@ -125,6 +120,7 @@ body{
   font-family: 'Questrial', sans-serif;
   margin: 0px 0px 0px 0px;
   padding: 20px 50px 70px;
+  border-bottom: solid white 1px;
 }
 
 .why{
@@ -134,8 +130,8 @@ body{
   color: white;
   font-family: 'Questrial', sans-serif;
   margin: 0px 0px 0px 0px;
-  padding: 20px 0px 5px;
-  border-bottom: solid white 1px;
+  padding: 60px 0px 5px;
+  
 }
 
 .who{

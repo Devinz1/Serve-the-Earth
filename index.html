@@ -16,12 +16,12 @@
     <h1 id="earthHead"> Serve The Earth </h1>
   </div>
   
-  <div ng-controller="ProgressDemoCtrl">
+<div ng-controller="ProgressDemoCtrl">
 
     
   <div class='fund' ng-repeat = "progress in progressResult"> 
       <h2> {{progress.fund}}</h2>
-    <div class='myProgress'>
+  <div class='myProgress'>
       <div class="bar" ng-style="{width: (getPercentage() + '%' )}">
           <!-- show calculated percentage if total amount raised is <= 100% -->
           <!--<span class="percent" ng-show="((progress.raised / progress.goal) * 100) <= 1000">{{((progress.raised / progress.goal) * 100) | number:0}}%</span>-->
@@ -40,59 +40,43 @@
           <h3><a href='https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=NsS7uaWkz_WVCztYwPoOPXgwDTe6S2Ep8q7Ms1Ix_S1WZJtVN0sXBDu_XKy&dispatch=5885d80a13c0db1f8e263663d3faee8d66f31424b43e9a70645c907a6cbd8fb4'button class="donateButton" type="button" ng-click="donate($index, donation)"></a> </h3>-->
         
 
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" ng-click="donate($index, donation)">
-<input type="hidden" name="cmd" value="_donations">
-<input type="hidden" name="business" value="letsserveearth@gmail.com">
-<input type="hidden" name="lc" value="US">
-<input type="hidden" name="item_name" value="Serve The Earth">
-<input type="hidden" name="no_note" value="0">
-<input type="hidden" name="currency_code" value="USD">
-<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" ng-click="donate($index, donation)">
+      <input type="hidden" name="cmd" value="_donations">
+      <input type="hidden" name="business" value="letsserveearth@gmail.com">
+      <input type="hidden" name="lc" value="US">
+      <input type="hidden" name="item_name" value="Serve The Earth">
+      <input type="hidden" name="no_note" value="0">
+      <input type="hidden" name="currency_code" value="USD">
+      <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+  </form>
 
 
 
-         
-
-          
-
-</div>
+  </div>
   
-
-     <!-- code that might be used later, I dont want to delete it quite yet-->
-      <!--<input ng-model='donation.amount'>
-      <button ngclick='addDonate'('donation.amount', 'progress')><em>Donate</em>
-    </div> -->
-
-   <!-- <small><em>Object (changes type based on value)</em></small>
-    <progressbar class="progress-striped active" value="dynamic" type="{{type}}">{{type}} <i ng-show="showWarning">!!! MONEYYYYY!!!</i></progressbar> -->
-    
-   <!-- <hr />
-    <h3>Stacked <button class="btn btn-sm btn-primary" type="button" ng-click="randomStacked()">Randomize</button></h3>
-    <progress><bar ng-repeat="bar in stacked track by $index" value="bar.value" type="{{bar.type}}"><span ng-hide="bar.value < 5">{{bar.value}}%</span></bar></progress> -->
 
 </div>
 
 
     <div class='mission'> Our Mission</div>
 
-     <div class='aboutUs'>
+    <div class='aboutUs'>
         "Serve The Earth", is a web-app dedicated to helping others. We all want to serve others but sometimes we just don't know how or where to go? "Serve The Earth" allows everyone to serve, by donating money that will help provide items to people that need them. Every week it seems there is another disaster somewhere in the world. Whenever you turn on the news we hear about earthquakes, fires, diseases, deaths, and multiple other disasters and that just doesn't include natural disasters. We look at the supplies people need and donate to them according to their needs. "Serve The Earth" makes that possible. Every three weeks or so we will find a new cause to help with, and each cause will have specific items that you can donate money to that will help someone in need. It doesn't matter how much you donate, even a dollar will help the world know that we care.
     </div>
 
 
     
-      <h3 class='why'> Hope for the holidays</h3>
+  <h3 class='why'> Hope for the holidays</h3>
 
-     <div class='who'>
+    <div class='who'>
      This donation period we are going to donate to the country of Africa. Africa has felt many hardships and in recent months have been affected by Ebola. We wanted to give to a country that was facing hard times. We feel like we can help the people of Africa have hope for the New Year. For this donation period we wanted to donate bikes, first aid kits, and water filters.
-   </div>
+    </div>
 
-   <div class='list'>
-     <d1>
-      <img src="images/africa.jpg" alt='kids' width='310' height='340' align='right'/>
+  <div class='list'>
+    <d1>
+        <img src="images/africa.jpg" alt='kids' width='310' height='340' align='right'/>
       <dt>Bikes</dt> 
          <dd>We want to donate bikes to help those without transportation, not only does it make it easier to get around it is also safer in many ways. Families will be able to get where they need to in a fast and reliable way.</d>
       <dt>First Aid Kits</dt>
@@ -102,12 +86,12 @@
     
     </d1>
     
-   </div>
-   <div class='donateTo'>
+  </div>
+    <div class='donateTo'>
 
-   <p><a href ='#earthHead'><button class='donate' type='button'>Donate Today</button></a></p>
-   <h6 class='contact'>Contact us at <a href='mailto:letsserveearth@gmail.com'>letsserveearth@gmail.com</a></h6>
- </div>
+      <p><a href ='#earthHead'><button class='donate' type='button'>Donate Today</button></a></p>
+      <h6 class='contact'>Contact us at <a href='mailto:letsserveearth@gmail.com'>letsserveearth@gmail.com</a></h6>
+    </div>
 
 
 
