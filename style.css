@@ -1,19 +1,19 @@
 /*@import url(http://fonts.googleapis.com/css?family=Aldrich);*/
 
-
-body{
-  background-image: url("images/kids.jpg");
+body{ 
   text-align: center;
   max-width: 100%;
-  font-size: 14px;
-  color: #333;
-  position: static;
 }
-
+.kids{
+  background-image: url("images/kids.jpg");
+  background-size: 100%;
+  }
 
 #earthHead {
   text-align: center;
   font-size: 79px;
+  /*border: 2px solid white;  great look for different style background.
+  border-radius: 20px;*/
   background-color: transparent;
   text-indent: 20px; 
   color: white;
@@ -24,9 +24,7 @@ body{
   padding: 20px 50px;
 }
 
-
-
- .progress{
+.progress{
    position:relative;
    display: block;
    width:300px;
@@ -37,13 +35,7 @@ body{
    overflow: hidden;
    text-align: center;
 }
- .progress-bar{
-    width: 50%;
-    height: 100%;
-    background: #efefef;
-    transition: width 0.8s ease;
-}
-  /*.donateButton{
+    /*.donateButton{        //this is a future button dont delete
     text-align: center;
     font-size: 24px;
     border: 2px solid white;
@@ -55,9 +47,7 @@ body{
     padding:10px 30px;
     background-color: silver;
     border-radius: 16px;
-     
-
-  }*/
+}*/
 
 
 .fund{
@@ -67,24 +57,15 @@ body{
   border-radius: 20px;
   background-color: white;
   opacity: 0.92;
-  filter: alpha(opacity=80);
   color: black;
   font-family: 'Open Sans', sans-serif;
   display: inline-block;
   overflow: hidden;
-  padding-top: 10px;
   margin: 10px 30px 300px 30px;
+  padding: 0px 5px 0px 5px;
  }
 
-.bar{
-  font-family: 'Open Sans', sans-serif;
-  color: black;
-  font-size: 27px;
-  text-align: center;
-  display: inline-block;
- }
-
-.donateButton{
+/*.donateButton{       //future code I was wanting to keep
   text-align: center;
   font-size: 18px;
   border: 2px solid white;
@@ -96,26 +77,22 @@ body{
   padding:10px 50px 10px;
   background-color: black;
   border-radius: 20px;
-}
+}*/
 
 .mission {
   text-align: center;
   font-size: 53px;
   background-color: black;
-  text-indent: 20px; 
   color: white;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
   font-family: 'Open Sans', sans-serif;
-  margin: -45px 0px 0px 0px;
+  margin: -10px 0px 0px 0px;
   padding: 10px 50px;
- 
 }
 
 .aboutUs{
   text-align: center;
   font-size: 17px;
   background-color: black;
-  text-indent: 20px; 
   color: white;
   font-family: 'Questrial', sans-serif;
   margin: 0px 0px 0px 0px;
@@ -131,7 +108,6 @@ body{
   font-family: 'Questrial', sans-serif;
   margin: 0px 0px 0px 0px;
   padding: 60px 0px 5px;
-  
 }
 
 .who{
@@ -151,7 +127,7 @@ body{
   color: white;
   font-family: 'Open Sans', sans-serif;
   margin: 0px 0px 0px 0px;
-  padding: 90px 90px 100px ;
+  padding: 50px 90px 100px ;
 }
 
 .donateTo{
@@ -163,7 +139,6 @@ body{
   font-size: 21px;
   border: 2px solid white;
   color: black;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
   font-family: 'Indie Flower', cursive;
   display: inline-block;
   margin: 30px;

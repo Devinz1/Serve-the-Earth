@@ -17,6 +17,10 @@ angular.module('ui.bootstrap.demo').controller('ProgressDemoCtrl', function ($sc
 
     //sync.$save($id)
   }
+
+  // code that I plan to use later on as I continue to improve Serve The Earth
+
+
 //var list = $firebase(ref).$asArray();
 //list.$add({ foo: "bar" }).then(function(ref) {
   //var id = ref.key();
@@ -58,6 +62,7 @@ angular.module('ui.bootstrap.demo').controller('ProgressDemoCtrl', function ($sc
 
     
 
+    //$scope.dynamic = value;
     //$scope.type = type;
   //};
   //$scope.random();

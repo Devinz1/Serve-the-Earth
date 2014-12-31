@@ -1,8 +1,8 @@
 <!DOCTYPE>
 <html>
 <head>
-	<title>Serve The Earth</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <title>Serve The Earth</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
  
   <link rel="stylesheet" href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
@@ -11,12 +11,12 @@
 </head>
 
 <body ng-app='ui.bootstrap.demo'>
-
+<div class='kids'>
   <div class='background'></div>
     <h1 id="earthHead"> Serve The Earth </h1>
-  </div>
   
-<div ng-controller="ProgressDemoCtrl">
+  
+  <div ng-controller="ProgressDemoCtrl">
 
     
   <div class='fund' ng-repeat = "progress in progressResult"> 
@@ -41,64 +41,55 @@
         
 
   <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" ng-click="donate($index, donation)">
-      <input type="hidden" name="cmd" value="_donations">
-      <input type="hidden" name="business" value="letsserveearth@gmail.com">
-      <input type="hidden" name="lc" value="US">
-      <input type="hidden" name="item_name" value="Serve The Earth">
-      <input type="hidden" name="no_note" value="0">
-      <input type="hidden" name="currency_code" value="USD">
-      <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
-      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-  </form>
+    <input type="hidden" name="cmd" value="_donations">
+    <input type="hidden" name="business" value="letsserveearth@gmail.com">
+    <input type="hidden" name="lc" value="US">
+    <input type="hidden" name="item_name" value="Serve The Earth">
+    <input type="hidden" name="no_note" value="0">
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
+    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+ </form>
 
-
-
+    </div>  
   </div>
-  
-
 </div>
-
-
-    <div class='mission'> Our Mission</div>
+  <div class='mission'> Our Mission</div>
 
     <div class='aboutUs'>
-        "Serve The Earth", is a web-app dedicated to helping others. We all want to serve others but sometimes we just don't know how or where to go? "Serve The Earth" allows everyone to serve, by donating money that will help provide items to people that need them. Every week it seems there is another disaster somewhere in the world. Whenever you turn on the news we hear about earthquakes, fires, diseases, deaths, and multiple other disasters and that just doesn't include natural disasters. We look at the supplies people need and donate to them according to their needs. "Serve The Earth" makes that possible. Every three weeks or so we will find a new cause to help with, and each cause will have specific items that you can donate money to that will help someone in need. It doesn't matter how much you donate, even a dollar will help the world know that we care.
+        <p>Every week, it seems, there is another disaster happening somewhere in the world. The media reports about earthquakes, fires, diseases, deaths, and natural disasters that are consistently occurring. We all want to serve those in need but sometimes we just don't know how or where to go. "Serve The Earth" allows everyone to serve by donating money that will help provide items to people that need them.  Every three weeks "Serve The Earth" will find a new cause to help with. We look at specific supplies that people around the world need and donate to them according to their needs. This website allows you to donate money to these supplies. It doesn't matter how much is donated, even a dollar will help the world know that we care.</p>
     </div>
 
-
-    
-  <h3 class='why'> Hope for the holidays</h3>
+      <h3 class='why'> Hope for the holidays</h3>
 
     <div class='who'>
-     This donation period we are going to donate to the country of Africa. Africa has felt many hardships and in recent months have been affected by Ebola. We wanted to give to a country that was facing hard times. We feel like we can help the people of Africa have hope for the New Year. For this donation period we wanted to donate bikes, first aid kits, and water filters.
+     <p>This donation period "Serve The Earth" will be donating to the country of Africa. Africa has suffered many hardships and in recent months have been affected by Ebola. With your donation the people of Africa can have hope for the New Year. For this donation period we plan to donate bikes, first aid kits, and water filters.</p>
+
     </div>
 
   <div class='list'>
     <d1>
-        <img src="images/africa.jpg" alt='kids' width='310' height='340' align='right'/>
-      <dt>Bikes</dt> 
-         <dd>We want to donate bikes to help those without transportation, not only does it make it easier to get around it is also safer in many ways. Families will be able to get where they need to in a fast and reliable way.</d>
-      <dt>First Aid Kits</dt>
-         <dd>First aid kits help improve the lives of everyone by providing healthy means of getting your body the proper care it needs, when needed. No one should have to worry about a small cut getting infected to the point where you need to be hospitalized. This will help many provide a safer and healthier life.</dd>
-      <dt>Water Bottles</dt> 
-         <dd>Filters provide a way make water drinkable and accessible. We want to provide water bottles that can do that for you. With these water bottles not only will it help health wise it will help families rest easy at night knowing there going to be ok.</dd>
+         <img src="images/africa.jpg" alt='kids' width='310' height='340' align='right'/>
+          <dt>Bikes</dt> 
+            <dd>"Serve The Earth" will donate bikes to help those without transportation. With these bikes transportation will be more reliable and as families commute they will be safer.</dd>
+          <dt>First Aid Kits</dt>
+            <dd>First aid kits will improve the lives of those receiving them by providing a healthy means of proper care. First aid kits would minimize the worry of small cuts getting infected to the point of hospitalization. This will provide a safer and healthier lifestyle.</dd>
+          <dt>Water Filters</dt> 
+            <dd>Water filters provide a way to make water drinkable and accessible. "Serve The Earth" will contribute water filters to families that need assistance and healthy living.</dd>
     
     </d1>
     
   </div>
-    <div class='donateTo'>
+  <div class='donateTo'>
 
-      <p><a href ='#earthHead'><button class='donate' type='button'>Donate Today</button></a></p>
-      <h6 class='contact'>Contact us at <a href='mailto:letsserveearth@gmail.com'>letsserveearth@gmail.com</a></h6>
-    </div>
-
-
+   <p><a href ='#earthHead'><button class='donate' type='button'>Donate Today</button></a></p>
+   <h6 class='contact'>Contact us at <a href='mailto:letsserveearth@gmail.com'>letsserveearth@gmail.com</a></h6>
+  </div>
 
 
-  <!--<h2> Donate Today</h2>-->
 
-   <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js'></script>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.11.2/ui-bootstrap-tpls.min.js'></script>
   <script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
   <script src="https://cdn.firebase.com/libs/angularfire/0.8.2/angularfire.min.js"></script>
@@ -106,9 +97,5 @@
   <script src='js/controllers/mainCtrl.js'></script>
   
   
- 
-  
-     		
-
-</body>
+ </body>
 </html>
